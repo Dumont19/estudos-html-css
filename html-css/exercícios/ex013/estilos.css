@@ -1,0 +1,17 @@
+body {
+    background-color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: blue;
+    background-color: rgb(75, 196, 196);
+}
+
+h2 {
+    color: crimson;
+}
+
+p {
+    text-align: justify;
+}
