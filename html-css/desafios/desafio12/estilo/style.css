@@ -9,10 +9,11 @@
     font-family: 'Sriracha';
     src: url('../fontes/sriracha-regular.ttf') format('truetype');
 }
-    :root {
-        --fonte-cabecalho: 'Passion', cursive;
-        --fonte-corpo: 'Sriracha', cursive;
-    }
+:root {
+    --fonte-padrao: verdana, geneva, tahoma, sans-serif;
+    --fonte-cabecalho: 'Passion', cursive;
+    --fonte-corpo: 'Sriracha', cursive;
+}
 
 
 * {
@@ -21,18 +22,20 @@
 }
 
 html, body {
+    font-family: var(--fonte-padrao);
     min-width: 100vh;
     background-color: darkgrey;
 }
 
 header {
-    font-family: var(--fonte-cabecalho);
     background-color: black;
     color: white;
     text-align: center;
 }
 
 header > h1 {
+    font-family: var(--fonte-cabecalho);
+    font-size: 10vw;
     padding-top: 50px;
     font-variant: small-caps;
 }
@@ -53,6 +56,7 @@ a:hover {
 
 section {
     font-family: var(--fonte-corpo);
+    font-size: 3.5vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
@@ -70,8 +74,9 @@ section.imagem {
 }
 
 section.imagem > p {
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.418);
-    width: 400px;
+    padding: 5px;
 }
 
 footer {
